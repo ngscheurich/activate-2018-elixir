@@ -1,6 +1,6 @@
 # Intro to Functional Programming with Elixir
 
-> A Presentation for [Activate 2018](http://www.activateconf.com/)
+> A presentation for [Activate 2018](http://www.activateconf.com/)
 
 ## Overview
 
