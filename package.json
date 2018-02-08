@@ -3,13 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.17.0",
-    "eslint-plugin-html": "^4.0.2",
-    "eslint-plugin-prettier": "^2.6.0",
-    "prettier": "^1.10.2",
+    "babel-plugin-emotion": "^9.0.0",
+    "emotion": "^9.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-emotion": "^9.0.0",
     "spectacle-scripts": "2.0.0"
   },
   "scripts": {
@@ -17,5 +15,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.17.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.10.2"
   }
 }
