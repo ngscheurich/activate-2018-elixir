@@ -1,23 +1,17 @@
 import React, { Component } from "react";
 import { Deck, MarkdownSlides } from "spectacle";
-import createTheme from "spectacle/lib/themes/default";
 import Title from "./slides/Title";
 import Demo from "./slides/Demo";
+import createTheme from "spectacle-theme-nova";
 
-require("normalize.css");
 
-const theme = createTheme(
-  {
-    primary: "linear-gradient(45deg, #4e2a8e, #714a94)",
-    secondary: "white",
-    tertiary: "white",
-    quarternary: "white"
-  },
-  {
-    primary: "Montserrat",
-    secondary: "Alegreya"
+const theme = createTheme("nova", {
+  components: {
+    listItem: {
+      lineHeight: 1.45
+    }
   }
-);
+});
 
 export default class Presentation extends Component {
   render() {

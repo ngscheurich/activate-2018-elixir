@@ -2020,6 +2020,12 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
+deep-assign@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/deep-assign/-/deep-assign-2.0.0.tgz#ebe06b1f07f08dae597620e3dd1622f371a1c572"
+  dependencies:
+    is-obj "^1.0.0"
+
 deep-equal@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
@@ -3320,6 +3326,10 @@ hawk@~6.0.2:
 he@1.1.x, he@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
+
+hex-rgb@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/hex-rgb/-/hex-rgb-1.0.0.tgz#532275697cb9823e052429b184c6781d46cfdf49"
 
 history@^4.6.1:
   version "4.7.2"
@@ -4764,9 +4774,17 @@ normalize-url@^1.4.0:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
+normalize.css@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-5.0.0.tgz#7cec875ce8178a5333c4de80b68ea9c18b9d7c37"
+
 normalize.css@7.0.0, normalize.css@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-7.0.0.tgz#abfb1dd82470674e0322b53ceb1aaf412938e4bf"
+
+nova-colors@2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/nova-colors/-/nova-colors-2.1.5.tgz#9d03da38e8b69b07aced888e4d9a44800caa5644"
 
 npm-run-path@^2.0.0:
   version "2.0.2"
@@ -5444,7 +5462,7 @@ pretty-format@^20.0.3:
     ansi-regex "^2.1.1"
     ansi-styles "^3.0.0"
 
-prismjs@^1.6.0:
+prismjs@^1.5.1, prismjs@^1.6.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.11.0.tgz#297aef33eb79421bfdb19273a5092ca515970d29"
   optionalDependencies:
@@ -6355,6 +6373,17 @@ spectacle-scripts@2.0.0:
     whatwg-fetch "2.0.3"
   optionalDependencies:
     fsevents "1.1.2"
+
+spectacle-theme-nova@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/spectacle-theme-nova/-/spectacle-theme-nova-1.4.1.tgz#8cd4476e27a036600d2e76b637d74237648d7b97"
+  dependencies:
+    deep-assign "2.0.0"
+    hex-rgb "1.0.0"
+    normalize.css "5.0.0"
+    nova-colors "2.1.5"
+  optionalDependencies:
+    prismjs "^1.5.1"
 
 spectacle@^4.0.0:
   version "4.0.5"
