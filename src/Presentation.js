@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Deck, MarkdownSlides } from "spectacle";
 import Title from "./slides/Title";
-import Demo from "./slides/Demo";
 import createTheme from "spectacle-theme-nova";
 
 
@@ -23,7 +22,6 @@ export default class Presentation extends Component {
         transitionDuration={300}
       >
         {Title()}
-        {Demo()}
       </Deck>
     );
   }
