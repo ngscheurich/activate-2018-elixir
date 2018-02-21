@@ -1,44 +1,68 @@
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
-const activate = {
-  colors: {
-    navy: "#0A3D5E",
-    teal: "#00AEB4",
-    red: "#DB232A",
-    orange: "#F37620",
-    yellow: "#EFC818",
-    text: "rgba(255, 255, 255, 0.8)",
-    controls: "rgba(255, 255, 255, 0.4)"
-  },
+const colors = {
+  navy: "#0A3D5E",
+  teal: "#00AEB4",
+  red: "#DB232A",
+  orange: "#F37620",
+  yellow: "#EFC818",
+  text: "rgba(255, 255, 255, 0.75)",
+  controls: "rgba(255, 255, 255, 0.4)"
+};
 
-  fonts: {
-    text: "Source Sans Pro",
-    heading: "Ubuntu",
-    code: "Ubunutu Mono"
+const fonts = {
+  text: "Source Sans Pro",
+  heading: "Ubuntu",
+  code: "Ubunutu Mono"
+};
+
+const styles = {
+  marginBottom: {
+    marginBottom: "2rem"
+  },
+  titleSlide: {
+    backgroundColor: "#0A3D5E",
+    container: {
+      alignItems: "center",
+      flexDirection: "column",
+      top: "calc(-50vh + 50%)",
+      left: "calc(-50vw + 50%)",
+      position: "absolute",
+      width: "100vw",
+      height: "100vh"
+    },
+    image: {
+      margin: 0,
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)"
+    }
   }
 };
 
 const base = createTheme();
-export const theme = {
+const theme = {
   ...base,
 
   screen: {
     ...base.screen,
     global: {
       body: {
-        background: activate.colors.navy,
-        fontSize: "2rem"
+        background: colors.navy,
+        fontSize: "2rem",
+        overflow: "hidden"
       }
     },
 
     controls: {
       ...base.screen.controls,
       prevIcon: {
-        fill: activate.colors.controls
+        fill: colors.controls
       },
       nextIcon: {
-        fill: activate.colors.controls
+        fill: colors.controls
       }
     },
 
@@ -46,7 +70,7 @@ export const theme = {
       ...base.screen.progess,
       bar: {
         bar: {
-          background: activate.colors.controls
+          background: colors.controls
         }
       }
     },
@@ -55,28 +79,31 @@ export const theme = {
       ...base.screen.components,
       text: {
         ...base.screen.components.text,
-        color: activate.colors.text,
-        fontFamily: activate.fonts.heading,
-        fontSize: "2rem"
+        color: colors.text,
+        fontFamily: fonts.text,
+        fontSize: "2rem",
+        textAlign: "left",
+        lineHeight: 1.35
       },
 
       heading: {
         h2: {
-          color: activate.colors.teal,
+          color: colors.teal,
           fontSize: "4rem",
-          fontFamily: activate.fonts.heading,
+          fontFamily: fonts.heading,
           margin: "0 0 4rem"
         },
         h3: {
-          color: activate.colors.orange,
+          color: colors.orange,
           fontSize: "3rem",
-          fontFamily: activate.fonts.heading,
+          fontFamily: fonts.heading,
+          fontWeight: 400,
           margin: "0 0 2rem"
         },
         h4: {
-          color: activate.colors.teal,
+          color: colors.teal,
           fontSize: "2.4rem",
-          fontFamily: activate.fonts.heading,
+          fontFamily: fonts.heading,
           margin: "0 0 2rem"
         }
       },
@@ -86,15 +113,15 @@ export const theme = {
       },
 
       listItem: {
-        color: activate.colors.text,
-        fontFamily: activate.fonts.text
+        color: colors.text,
+        fontFamily: fonts.text
       },
 
       quote: {
         ...base.screen.components.quote,
-        borderLeft: `3px solid ${activate.colors.yellow}`,
-        color: activate.colors.yellow,
-        fontFamily: activate.fonts.text,
+        borderLeft: `3px solid ${colors.yellow}`,
+        color: colors.yellow,
+        fontFamily: fonts.text,
         fontSize: "4.5rem",
         fontStyle: "italic",
         fontWeight: 500
@@ -102,10 +129,17 @@ export const theme = {
 
       cite: {
         ...base.screen.components.cite,
-        color: activate.colors.orange,
-        fontFamily: activate.fonts.text,
+        color: colors.orange,
+        fontFamily: fonts.text,
         fontStyle: "normal"
+      },
+
+      codePane: {
+        ...base.screen.components.codePane,
+        fontSize: "1.3rem"
       }
     }
   }
 };
+
+export { colors, fonts, styles, theme };
