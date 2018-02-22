@@ -449,7 +449,43 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide>
-          <Text style={{ textAlign: "center" }}>[credits]</Text>
+          <Heading
+            size={3}
+            style={{ textAlign: "center", marginBottom: "4rem" }}
+          >
+            Questions?
+          </Heading>
+          <Layout style={styles.marginBottom}>
+            <Fill>
+              <Image
+                src={images.logan}
+                style={{ width: 150, marginBottom: "2rem" }}
+              />
+              <Text style={{ textAlign: "center", color: colors.yellow }}>
+                @lleger
+              </Text>
+              <Text style={{ textAlign: "center", fontSize: "1.5rem" }}>
+                Talky-talks
+              </Text>
+            </Fill>
+
+            <Fill>
+              <Image
+                src={images.nick}
+                style={{ width: 150, marginBottom: "2rem" }}
+              />
+              <Text style={{ textAlign: "center", color: colors.yellow }}>
+                @ngscheurich
+              </Text>
+              <Text style={{ textAlign: "center", fontSize: "1.5rem" }}>
+                Slidey-slides
+              </Text>
+            </Fill>
+          </Layout>
+          <Text style={{ color: colors.teal, textAlign: "center" }}>
+            https://github.com/ngscheurich/activate-2018-elixir
+          </Text>
+          <Text style={{ textAlign: "center" }}>We 💜 Elixir</Text>
         </Slide>
       </Deck>
     );
