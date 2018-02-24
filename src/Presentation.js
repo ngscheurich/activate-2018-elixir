@@ -56,7 +56,7 @@ export default class Presentation extends React.Component {
                 </ListItem>
                 <ListItem>
                   <strong>Concurrency:</strong> Switches need to be able to
-                  handle thousands or hundreds of thousands of simulatenous
+                  handle thousands or hundreds of thousands of simultaneous
                   connections
                 </ListItem>
                 <ListItem>
