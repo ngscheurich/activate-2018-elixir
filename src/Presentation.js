@@ -102,7 +102,7 @@ export default class Presentation extends React.Component {
               simultaneous users can be handled on minimal hardware*
             </ListItem>
             <ListItem>
-              <strong>Performace:</strong> Faster experiences are better for
+              <strong>Performance:</strong> Faster experiences are better for
               users
             </ListItem>
           </List>
