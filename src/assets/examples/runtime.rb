@@ -8,7 +8,7 @@ class Example
   end
 end
 
-# 🚀 Deploy...OK
+# 🚀 Deploy.. .OK
 
 example = Example.new
 add(example.value, 1) # => TypeError: no implicit conversion of Integer into String
