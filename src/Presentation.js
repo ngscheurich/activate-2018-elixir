@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   BlockQuote,
   Cite,
@@ -12,13 +12,13 @@ import {
   Image,
   Layout,
   Fit,
-  Fill
-} from "spectacle";
-import CodePane from "./components/CodePane";
+  Fill,
+} from "spectacle"
+import CodePane from "./components/CodePane"
 
-import { theme, colors, fonts, styles } from "./themes/activate";
-import * as images from "./assets/images";
-import * as examples from "./assets/examples";
+import { theme, colors, fonts, styles } from "./themes/activate"
+import * as images from "./assets/images"
+import * as examples from "./assets/examples"
 
 export default class Presentation extends React.Component {
   render() {
@@ -45,7 +45,7 @@ export default class Presentation extends React.Component {
         <Slide>
           <List>
             <ListItem>
-              Built in 1986 to as an experiment for telephony switch networks
+              Built in 1986 as an experiment for telephony switch networks
             </ListItem>
             <ListItem>
               Designed to solve problems facing telephony
@@ -56,7 +56,7 @@ export default class Presentation extends React.Component {
                 </ListItem>
                 <ListItem>
                   <strong>Concurrency:</strong> Switches need to be able to
-                  handle thousands or hundreds of thousands of simulatenous
+                  handle thousands or hundreds of thousands of simultaneous
                   connections
                 </ListItem>
                 <ListItem>
@@ -102,7 +102,7 @@ export default class Presentation extends React.Component {
               simultaneous users can be handled on minimal hardware*
             </ListItem>
             <ListItem>
-              <strong>Performace:</strong> Faster experiences are better for
+              <strong>Performance:</strong> Faster experiences are better for
               users
             </ListItem>
           </List>
@@ -198,9 +198,6 @@ export default class Presentation extends React.Component {
             <ListItem>
               Everything is a function (yes, <em>everything</em>)
             </ListItem>
-            <ListItem>
-              It has a modern syntax, most broadly influenced by Ruby
-            </ListItem>
           </List>
         </Slide>
 
@@ -255,7 +252,7 @@ export default class Presentation extends React.Component {
           <Text>
             This is really hard to read and reason about. It’s inside-out, which
             makes it difficult to understand what is happening. It’s also
-            difficult add a new function call in the middle.
+            difficult to add a new function call in the middle.
           </Text>
         </Slide>
 
@@ -449,6 +446,10 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide>
+          <Heading size={3}>Example Code</Heading>
+        </Slide>
+
+        <Slide>
           <Heading
             size={3}
             style={{ textAlign: "center", marginBottom: "4rem" }}
@@ -488,6 +489,6 @@ export default class Presentation extends React.Component {
           <Text style={{ textAlign: "center" }}>We 💜 Elixir</Text>
         </Slide>
       </Deck>
-    );
+    )
   }
 }

@@ -8,8 +8,8 @@
         <g id="Group">
             <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="300" height="160"></rect>
             <text id="y-=-ƒ(x)" font-family="TimesNewRomanPS-ItalicMT, Times New Roman" font-size="72" font-style="italic" font-weight="normal" letter-spacing="-3.5999999" fill="#363636">
-                <tspan x="50" y="95">y</tspan>
-                <tspan x="78.3570313" y="95" font-family="TimesNewRomanPSMT, Times New Roman"> = ƒ(x)</tspan>
+                <tspan x="50" y="95">y </tspan>
+                <tspan x="95" y="95" font-family="TimesNewRomanPSMT, Times New Roman"> = ƒ(x)</tspan>
             </text>
         </g>
     </g>
