@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   BlockQuote,
   Cite,
@@ -12,13 +12,13 @@ import {
   Image,
   Layout,
   Fit,
-  Fill
-} from "spectacle";
-import CodePane from "./components/CodePane";
+  Fill,
+} from "spectacle"
+import CodePane from "./components/CodePane"
 
-import { theme, colors, fonts, styles } from "./themes/activate";
-import * as images from "./assets/images";
-import * as examples from "./assets/examples";
+import { theme, colors, fonts, styles } from "./themes/activate"
+import * as images from "./assets/images"
+import * as examples from "./assets/examples"
 
 export default class Presentation extends React.Component {
   render() {
@@ -197,9 +197,6 @@ export default class Presentation extends React.Component {
             </ListItem>
             <ListItem>
               Everything is a function (yes, <em>everything</em>)
-            </ListItem>
-            <ListItem>
-              It has a modern syntax, most broadly influenced by Ruby
             </ListItem>
           </List>
         </Slide>
@@ -488,6 +485,6 @@ export default class Presentation extends React.Component {
           <Text style={{ textAlign: "center" }}>We 💜 Elixir</Text>
         </Slide>
       </Deck>
-    );
+    )
   }
 }
