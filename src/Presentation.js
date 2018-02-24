@@ -45,7 +45,7 @@ export default class Presentation extends React.Component {
         <Slide>
           <List>
             <ListItem>
-              Built in 1986 to as an experiment for telephony switch networks
+              Built in 1986 as an experiment for telephony switch networks
             </ListItem>
             <ListItem>
               Designed to solve problems facing telephony
