@@ -472,8 +472,10 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
-        <Slide>
-          <Heading size={3}>Example Code</Heading>
+        <Slide bgColor={styles.titleSlide.backgroundColor}>
+          <div style={styles.titleSlide.container}>
+            <Image src={images.joe} style={styles.titleSlide.image} />
+          </div>
         </Slide>
 
         <Slide>
