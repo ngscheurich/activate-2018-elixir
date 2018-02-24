@@ -252,7 +252,7 @@ export default class Presentation extends React.Component {
           <Text>
             This is really hard to read and reason about. It’s inside-out, which
             makes it difficult to understand what is happening. It’s also
-            difficult add a new function call in the middle.
+            difficult to add a new function call in the middle.
           </Text>
         </Slide>
 
