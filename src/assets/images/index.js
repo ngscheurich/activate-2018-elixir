@@ -6,6 +6,9 @@ import iexDocs from "./iex-docs.png";
 import joe from "./big-bad-joe.png";
 import logan from "./logan.png";
 import nick from "./nick.png";
+import concurrent from "./concurrent.png";
+import nonConcurrent from "./non-concurrent.png";
+import supervisionTree from "./supervision-tree.png";
 
 export {
   titleSlide,
@@ -15,5 +18,8 @@ export {
   iexDocs,
   joe,
   logan,
-  nick
+  nick,
+  concurrent,
+  nonConcurrent,
+  supervisionTree
 };
