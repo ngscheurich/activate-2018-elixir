@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import {
   BlockQuote,
   Cite,
@@ -12,13 +12,13 @@ import {
   Image,
   Layout,
   Fit,
-  Fill,
-} from "spectacle"
-import CodePane from "./components/CodePane"
+  Fill
+} from "spectacle";
+import CodePane from "./components/CodePane";
 
-import { theme, colors, fonts, styles } from "./themes/activate"
-import * as images from "./assets/images"
-import * as examples from "./assets/examples"
+import { theme, colors, fonts, styles } from "./themes/activate";
+import * as images from "./assets/images";
+import * as examples from "./assets/examples";
 
 export default class Presentation extends React.Component {
   render() {
@@ -399,7 +399,11 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide>
-          <Text style={{ textAlign: "center" }}>[concurrency graphic]</Text>
+          <Image src={images.nonConcurrent} />
+        </Slide>
+
+        <Slide>
+          <Image src={images.concurrent} style={{ maxHeight: 700 }} />
         </Slide>
 
         <Slide>
@@ -441,7 +445,7 @@ export default class Presentation extends React.Component {
 
         <Slide>
           <Text style={{ textAlign: "center" }}>
-            [supervision tree graphic]
+            <Image src={images.supervisionTree} />
           </Text>
         </Slide>
 
@@ -489,6 +493,6 @@ export default class Presentation extends React.Component {
           <Text style={{ textAlign: "center" }}>We 💜 Elixir</Text>
         </Slide>
       </Deck>
-    )
+    );
   }
 }
