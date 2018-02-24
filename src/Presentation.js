@@ -446,6 +446,10 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide>
+          <Heading size={3}>Example Code</Heading>
+        </Slide>
+
+        <Slide>
           <Heading
             size={3}
             style={{ textAlign: "center", marginBottom: "4rem" }}
