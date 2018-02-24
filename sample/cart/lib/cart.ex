@@ -87,3 +87,12 @@ defmodule Cart do
     Float.round(subtotal + subtotal * 0.05, 2)
   end
 end
+
+# widget_a = %Cart.Item{name: "Widget A", price: 1.25}
+# widget_b = %Cart.Item{name: "Widget B", price: 2.00}
+
+# widget_a
+# |> Cart.add_item
+# |> Cart.add_item(widget_b)
+# |> Cart.total("LA")
+# |> IO.inspect
