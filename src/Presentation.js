@@ -399,11 +399,34 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide>
-          <Image src={images.nonConcurrent} />
+          <Image src={images.nonConcurrent} style={styles.marginBottom} />
+          <Text
+            style={{
+              color: colors.orange,
+              fontSize: "1rem",
+              textAlign: "center"
+            }}
+          >
+            * Based on examples from “The Little Elixir & OTP Guidebook” by
+            Benjamin Tan Wei Hao
+          </Text>
         </Slide>
 
         <Slide>
-          <Image src={images.concurrent} style={{ maxHeight: 700 }} />
+          <Image
+            src={images.concurrent}
+            style={{ maxHeight: 600, marginBottom: "2rem" }}
+          />
+          <Text
+            style={{
+              color: colors.orange,
+              fontSize: "1rem",
+              textAlign: "center"
+            }}
+          >
+            Based on examples from “The Little Elixir & OTP Guidebook” by
+            Benjamin Tan Wei Hao
+          </Text>
         </Slide>
 
         <Slide>
